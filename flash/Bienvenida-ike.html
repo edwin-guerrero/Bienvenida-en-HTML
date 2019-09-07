@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html >
+<html >
+<head>
+<title>iKe Asistencia Colombia</title>
+<style type="text/css">
+#contenedor {
+	position: absolute;
+	width: 1000px;
+	height: 900px;
+	z-index: 1;
+	background-color: #ffffff;
+	margin-left: -500px;
+	top: 30;
+	left: 50%;
+}
+#banner {
+	position: absolute;
+	width: 1000px;
+	height: 150px;
+	z-index: 1;
+	left: 0px;
+	top: 0px;
+	background-color: #045FB4;
+}
+#logo {
+	position: absolute;
+	width: 150px;
+	height: 200px;
+	z-index: 2;
+	left: 50px;
+	top: 50px;
+	background-color: #86B404;
+}
+#contenedor_indicadores {
+	position: absolute;
+	width: 300px;
+	height: 564px;
+	z-index: 3;
+	left: 688px;
+	top: 312px;
+	background-color: #ffffff;
+}
+#tiempo {
+	position: absolute;
+	width: 300px;
+	height: 289px;
+	z-index: 2;
+	left: 695px;
+	top: 160px;
+}
+#data_ifx {
+	position: absolute;
+	width: 296px;
+	height: 241px;
+	z-index: 2;
+	left: 695px;
+	top: 449px;
+}
+#contenedor_noticias {
+	position: absolute;
+	width: 656px;
+	height: 585px;
+	z-index: 3;
+	left: 20px;
+	top: 280px;
+}
+body {
+	background-color: #585858;
+}
+
+
+#Hora_local {
+	position: absolute;
+	width: 230px;
+	height: 95px;
+	z-index: 2;
+	left: 230px;
+	top: 21px;
+	font: Arial Narrow;
+	color: #FFF;
+	font-size: 36px;
+}
+#Hora_Mundial {
+	position: absolute;
+	width: 779px;
+	height: 27px;
+	z-index: 3;
+	left: 202px;
+	top: 133px;
+	font: Arial Narrow;
+	color: #FFF;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body >
+
+<div id="contenedor">
+
+  <div id="banner"
+  style="
+  -moz-box-shadow: 0px 20px 7px #045FB4; 
+  -webkit-box-shadow: 0px 20px 7px #045FB4; 
+  box-shadow: 0px 20px 7px #045FB4; 
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color=#045FB4)'; 
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#045FB4');">  <!-- propiedades de sombra -->
+
+  
+  
+    <div id="Hora_local">
+                <!-- Scrip Reloj-->
+          <span id="liveclock" ></span><script language="JavaScript" type="text/javascript">
+         
+        function show5(){
+        if (!document.layers&&!document.all&&!document.getElementById)
+        return
+        
+         var Digital=new Date()
+         var hours=Digital.getHours()
+         var minutes=Digital.getMinutes()
+     	 var seconds=Digital.getSeconds()
+        
+        var dn="PM"
+        if (hours<12)
+        dn="AM"
+        if (hours>12)
+        hours=hours-12
+        if (hours==0)
+        hours=12
+        
+         if (minutes<=9)
+         minutes="0"+minutes
+         if (seconds<=9)
+         seconds="0"+seconds
+        //cambiar el tamaño de fuente para su deseo
+        myclock="<font size='36' face='Arial Narrow' ><b><font size='2'>Hora actual:</font></br>"+hours+":"+minutes+":"
+         +seconds+" "+dn+"</b></font>"
+        if (document.layers){
+        document.layers.liveclock.document.write(myclock)
+        document.layers.liveclock.document.close()
+        }
+        else if (document.all)
+        liveclock.innerHTML=myclock
+        else if (document.getElementById)
+        document.getElementById("liveclock").innerHTML=myclock
+        setTimeout("show5()",1000)
+         }
+        
+        
+        window.onload=show5
+         //-->
+ </script>
+    
+    </div>
+     <div id="Hora_Mundial">
+
+<!-- Hora Mexico -->	
+
+	<span><strong>
+    <a href="http://24timezones.com/es_husohorario/mexico_city_hora_actual.php" style=" color:#F60; font:Arial Norrow" target="_BLANK" title="hora actual Ciudad de México">MEXICO</a> - <span id="tzTimeSpan_ee5123cb9055a40"></span>
+    <script type="text/javascript" src="http://24timezones.com/js/es/time_12_0_0.js"></script>
+    <script src="http://24timezones.com/timescript/gettime.js.php?city=155&hourtype=12&showdate=0&showseconds=0&id=1140935&elem=ee5123cb9055a40" language="javascript"></script>
+</strong></span> 
+      
+<!-- Hora Brazil -->
+
+<span><strong>
+    <a href="http://24timezones.com/es_husohorario/rio_de_janeiro_hora_actual.php" style=" color:#F60; font:Arial Norrow" target="_BLANK" title="hora actual Río de Janeiro">BRAZIL</a> - <span id="tzTimeSpan_ee5123d7d6f2dec"></span>
+    <script type="text/javascript" src="http://24timezones.com/js/es/time_12_0_0.js"></script>
+    <script src="http://24timezones.com/timescript/gettime.js.php?city=213&hourtype=12&showdate=0&showseconds=0&id=1141016&elem=ee5123d7d6f2dec" language="javascript"></script>
+</strong></span>
+
+<!-- Hora Venezuela -->
+
+<span><strong>
+    <a href="http://24timezones.com/es_husohorario/caracas_hora_actual.php" style=" color:#F60; font:Arial Norrow" target="_BLANK" title="hora actual Caracas">VENEZUELA</a> - <span id="tzTimeSpan_ee5123d85514eda"></span>
+    <script type="text/javascript" src="http://24timezones.com/js/es/time_12_0_0.js"></script>
+    <script src="http://24timezones.com/timescript/gettime.js.php?city=58&hourtype=12&showdate=0&showseconds=0&id=1141018&elem=ee5123d85514eda" language="javascript"></script>
+</strong></span>
+
+<!-- Hora Argentina -->
+
+<span><strong>
+    <a href="http://24timezones.com/es_husohorario/buenos_aires_hora_actual.php" style=" color:#F60; font:Arial Norrow" target="_BLANK" title="hora actual Buenos Aires">ARGENTINA</a> - <span id="tzTimeSpan_ee5123d88cc60b6"></span>
+    <script type="text/javascript" src="http://24timezones.com/js/es/time_12_0_0.js"></script>
+    <script src="http://24timezones.com/timescript/gettime.js.php?city=51&hourtype=12&showdate=0&showseconds=0&id=1141022&elem=ee5123d88cc60b6" language="javascript"></script>
+</strong></span>
+
+   
+    </div>
+
+  </div>
+
+<!--logo-->
+
+  <div id="logo">
+  	<img src="imagenes ike/Ike colombia2.jpg" width="100%" height="201" b >
+  </div>
+
+<!-- Tiempo-->
+
+  <div id="tiempo">
+  <div id="TT_RysgbhdxY1jrjsIA7fuzzjDDjUaA12h2LYEdkZCIaEz"><h2><a href="http://www.tutiempo.net">El Tiempo</a></h2><a href="http://www.tutiempo.net/bogota.html">El tiempo en Bogotá</a>
+    </div>
+	<script type="text/javascript" src="http://www.tutiempo.net/widget/eltiempo_RysgbhdxY1jrjsIA7fuzzjDDjUaA12h2LYEdkZCIaEz"></script>
+  </div>
+
+<!-- DATA IFX-->
+  <div id="data_ifx">
+
+  	<iframe frameborder=0 marginwidth=0 marginheight=0 border=0 style="border:0;margin:0;width:300px;height:280px;"  
+    src="http://www.misfinanzasenlinea.com/applications/widget/datawidget.php?format=300x250&topic=bl">
+    </iframe>
+
+  </div>
+
+<!-- general-->
+  
+  <div id="contenedor_noticias"> 
+ 	<iframe frameborder=0 marginwidth="0" marginheight="0" border=0 style="border:0;margin:0;width:656px;height:585px;"
+    src="flash/colpatria.swf">
+	
+
+</div>
+</body>
+
+</html>
